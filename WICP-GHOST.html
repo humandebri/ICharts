@@ -9,7 +9,16 @@
 
 <body>
     <script>
+      document.body.style.position = 'relative';
 
+      var legend = document.createElement('div');
+      legend.classList.add('legend');
+      document.body.appendChild(legend);
+
+      var firstRow = document.createElement('div');
+      firstRow.innerText = 'GHOST WICP 1H';
+      firstRow.style.color = 'black';
+      legend.appendChild(firstRow);
 
       var chart = LightweightCharts.createChart(document.body, {
         width: 900,
